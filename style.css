@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    line-height: 1.6;
+}
+
+.script-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.button {
+    border: 1px solid #999;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s;
+    color: #666;
+}
+
+.button:hover {
+    background-color: #666;
+    color: white;
+}
+
+.countdown {
+    letter-spacing: 2px;
+}

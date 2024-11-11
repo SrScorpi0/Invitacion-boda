@@ -4,32 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilar & Matías - Invitación de Boda</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body class="bg-white">
     <div class="max-w-3xl mx-auto px-4 py-8">
+        
         <!-- Header -->
         <header class="text-center mb-16">
-            <p class="text-xl mb-4">16 de Noviembre</p>
-            <h1 class="text-4xl mb-4 script-font">¡NOS CASAMOS!</h1>
-            <h2 class="text-3xl script-font">Pilar & Matías</h2>
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">¡NOS CASAMOS!</h1>
+                    <h2 class="hero-names script-font">Pilar & Matías</h2>
+                    <p class="hero-date">Sábado 16 de Noviembre</p>
+                    <p class="countdown-display" id="countdown">FALTAN 0 DÍAS<br>00:00:00</p>
+                    <button class="hero-button">VER INFORMACIÓN</button>
+                </div>
+            </div>
         </header>
-
-        <!-- Countdown -->
-        <div class="text-center mb-16">
-            <p class="text-xl mb-2">Sábado 16 de Noviembre</p>
-            <p class="countdown text-2xl font-light" id="countdown">FALTAN 0 DÍAS 00:00:00</p>
-            <button class="button mt-4">VER INFORMACIÓN</button>
-        </div>
+            <!-- El resto de tu contenido aquí -->
 
         <!-- Ceremonia -->
-        <section class="text-center mb-16">
-            <h3 class="text-2xl mb-6">CEREMONIA</h3>
-            <p class="mb-4">Las mejores cosas de la vida merecen ser compartidas.</p>
-            <p class="mb-4">Los invitamos a las 17:00 hs a nuestra ceremonia en la</p>
-            <p class="font-medium mb-4">Parroquia Nuestra Señora del Pilar</p>
-            <p class="mb-6">Lorenzo López 624, Pilar</p>
-            <button class="button">CÓMO LLEGAR</button>
+        <section class="ceremony-section">
+            <div class="ceremony-container">
+                <div class="ceremony-image">
+                    <img src="/api/placeholder/800/600" alt="Lugar de la ceremonia" class="ceremony-img">
+                </div>
+                <div class="ceremony-content">
+                    <h3 class="ceremony-title">CEREMONIA</h3>
+                    <p class="ceremony-text">Las mejores cosas de la vida merecen ser compartidas.</p>
+                    <p class="ceremony-text">Los invitamos a las 17:00 hs a nuestra ceremonia en la</p>
+                    <p class="ceremony-venue">Parroquia Nuestra Señora del Pilar</p>
+                    <p class="ceremony-address">Lorenzo López 624, Pilar</p>
+                    <button class="location-button">CÓMO LLEGAR</button>
+                </div>
+            </div>
         </section>
 
         <!-- Fiesta -->

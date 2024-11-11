@@ -6,6 +6,82 @@ body {
     line-height: 1.6;
 }
 
+/* Añade estos estilos a tu archivo styles.css */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:  "/hero.jpg";
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.hero-names {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-date {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown-display {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.hero-button {
+    background: white;
+    color: #666;
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.hero-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
 .script-font {
     font-family: 'Dancing Script', cursive;
 }
@@ -24,4 +100,107 @@ body {
 
 .countdown {
     letter-spacing: 2px;
+}
+
+/* Añade estos estilos a tu archivo styles.css */
+.ceremony-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.ceremony-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.ceremony-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ceremony-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ceremony-img:hover {
+    transform: scale(1.05);
+}
+
+.ceremony-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ceremony-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.ceremony-text {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ceremony-venue {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.ceremony-address {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.location-button {
+    background-color: #A87E9F;
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.location-button:hover {
+    background-color: #956b8a;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .ceremony-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .ceremony-image {
+        height: 300px;
+    }
+
+    .ceremony-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ceremony-text {
+        font-size: 1rem;
+    }
 }
